@@ -1,0 +1,18 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+Icon\r
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+*.qlgenerator
+*.swp
+*.lock

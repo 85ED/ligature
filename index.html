@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligature - Edson & Daniela | Música Clássica para Momentos Especiais</title>
+    <meta name="description"
+        content="Dupla musical clássica Edson & Daniela oferece música refinada para casamentos, eventos corporativos e ocasiões especiais. Piano, violão e violino clássico.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./public/img/ligature.png" alt="">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#repertorio">Repertório</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>A Trilha Sonora Perfeita<br>Para Seus Momentos Especiais</h2>
+                <p>Música clássica refinada que transforma eventos em experiências inesquecíveis</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+                    <a href="#sobre" class="btn btn-secondary">Conheça Nosso Trabalho</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Nós</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="sobre-content">
+                <div class="sobre-image">
+                    <img src="./public/img/dupla.png"
+                        alt="Edson e Daniela em apresentação">
+                    <div class="image-frame"></div>
+                </div>
+
+                <div class="sobre-text">
+                    <h3>Uma Parceria Musical Excepcional</h3>
+                    <p class="lead">Somos Edson & Daniela, uma dupla musical dedicada a criar atmosferas únicas através
+                        da música clássica e contemporânea de alta qualidade.</p>
+
+                    <div class="musicians">
+                        <div class="musician">
+                            <div class="musician-icon">🎹</div>
+                            <div class="musician-info">
+                                <h4>Edson</h4>
+                                <p>Pianista e violonista com formação clássica e mais de 15 anos de experiência em
+                                    eventos refinados. Especialista em adaptações musicais personalizadas.</p>
+                            </div>
+                        </div>
+
+                        <div class="musician">
+                            <div class="musician-icon">🎻</div>
+                            <div class="musician-info">
+                                <h4>Daniela</h4>
+                                <p>Violinista clássica formada em conservatório, com técnica impecável e sensibilidade
+                                    artística que encanta em cada apresentação.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="features">
+                        <div class="feature">
+                            <span class="feature-number">200+</span>
+                            <span class="feature-text">Eventos Realizados</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-number">15+</span>
+                            <span class="feature-text">Anos de Experiência</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-number">100%</span>
+                            <span class="feature-text">Satisfação dos Clientes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Repertório -->
+    <section id="repertorio" class="repertorio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nosso Repertório</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Música refinada para todos os momentos especiais</p>
+            </div>
+
+            <div class="repertorio-grid">
+                <div class="repertorio-card">
+                    <div class="card-header">
+                        <h3>Clássico</h3>
+                        <div class="card-icon">♪</div>
+                    </div>
+                    <ul class="repertorio-list">
+                        <li>Ave Maria - Schubert</li>
+                        <li>Canon em D - Pachelbel</li>
+                        <li>Primavera - Vivaldi</li>
+                        <li>Clair de Lune - Debussy</li>
+                        <li>Wedding March - Mendelssohn</li>
+                        <li>Air on G String - Bach</li>
+                    </ul>
+                    <button class="play-btn" data-genre="classico">
+                        <span class="play-icon">▶</span>
+                        Ouvir Demonstração
+                    </button>
+                </div>
+
+                <div class="repertorio-card">
+                    <div class="card-header">
+                        <h3>MPB & Nacional</h3>
+                        <div class="card-icon">♫</div>
+                    </div>
+                    <ul class="repertorio-list">
+                        <li>Eu Sei Que Vou Te Amar - Tom Jobim</li>
+                        <li>A Felicidade - Tom Jobim</li>
+                        <li>Carinhoso - Pixinguinha</li>
+                        <li>Águas de Março - Tom Jobim</li>
+                        <li>Chega de Saudade - Tom Jobim</li>
+                        <li>Garota de Ipanema - Tom Jobim</li>
+                    </ul>
+                    <button class="play-btn" data-genre="mpb">
+                        <span class="play-icon">▶</span>
+                        Ouvir Demonstração
+                    </button>
+                </div>
+
+                <div class="repertorio-card">
+                    <div class="card-header">
+                        <h3>Internacional</h3>
+                        <div class="card-icon">♬</div>
+                    </div>
+                    <ul class="repertorio-list">
+                        <li>All of Me - John Legend</li>
+                        <li>A Thousand Years - Christina Perri</li>
+                        <li>Perfect - Ed Sheeran</li>
+                        <li>At Last - Etta James</li>
+                        <li>The Way You Look Tonight - Sinatra</li>
+                        <li>Unchained Melody - Righteous Brothers</li>
+                    </ul>
+                    <button class="play-btn" data-genre="internacional">
+                        <span class="play-icon">▶</span>
+                        Ouvir Demonstração
+                    </button>
+                </div>
+
+                <div class="repertorio-card">
+                    <div class="card-header">
+                        <h3>Contemporâneo</h3>
+                        <div class="card-icon">♭</div>
+                    </div>
+                    <ul class="repertorio-list">
+                        <li>Shallow - A Star is Born</li>
+                        <li>Hallelujah - Leonard Cohen</li>
+                        <li>Thinking Out Loud - Ed Sheeran</li>
+                        <li>Make You Feel My Love - Bob Dylan</li>
+                        <li>Someone Like You - Adele</li>
+                        <li>Fix You - Coldplay</li>
+                    </ul>
+                    <button class="play-btn" data-genre="contemporaneo">
+                        <span class="play-icon">▶</span>
+                        Ouvir Demonstração
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeria</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Momentos especiais que já fizemos parte</p>
+            </div>
+
+            <div class="galeria-grid">
+                <div class="galeria-item" data-category="casamento">
+                    <img src="./public/img/casamento.jpg"
+                        alt="Cerimônia de casamento elegante">
+                    <div class="galeria-overlay">
+                        <div class="overlay-content">
+                            <h4>Cerimônia de Casamento</h4>
+                            <p>Igreja São Bento - São Paulo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-category="corporativo">
+                    <img src="./public/img/corporativo.jpg"
+                        alt="Evento corporativo sofisticado">
+                    <div class="galeria-overlay">
+                        <div class="overlay-content">
+                            <h4>Evento Corporativo</h4>
+                            <p>Hotel Copacabana Palace - Rio de Janeiro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-category="casamento">
+                    <img src="./public/img/bar-terraco-italia-2.jpg"
+                        alt="Casamento ao ar livre">
+                    <div class="galeria-overlay">
+                        <div class="overlay-content">
+                            <h4>Casamento ao Ar Livre</h4>
+                            <p>Fazenda Vila Rica - Itatiba</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-category="especial">
+                    <img src="./public/img/pedido_elegante.jpg"
+                        alt="Pedido de casamento romântico">
+                    <div class="galeria-overlay">
+                        <div class="overlay-content">
+                            <h4>Pedido de Casamento</h4>
+                            <p>Jardim Botânico - São Paulo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-category="aniversario">
+                    <img src="./public/img/aniversario_casamento.jpg"
+                        alt="Aniversário elegante">
+                    <div class="galeria-overlay">
+                        <div class="overlay-content">
+                            <h4>Aniversário de 50 Anos</h4>
+                            <p>Clube Hípico - Campinas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-category="casamento">
+                    <img src="./public/img/recepcao.jpg"
+                        alt="Recepção de casamento">
+                    <div class="galeria-overlay">
+                        <div class="overlay-content">
+                            <h4>Recepção de Casamento</h4>
+                            <p>Palácio dos Cedros - São Paulo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal da Galeria -->
+    <div id="modal-galeria" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div id="modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Depoimentos</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">O que nossos clientes falam sobre nosso trabalho</p>
+            </div>
+
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="quote-icon">"</div>
+                    <p class="depoimento-text">A música do Edson e da Daniela tornou nosso casamento verdadeiramente
+                        mágico. A qualidade técnica e a sensibilidade artística são incomparáveis. Todos os convidados
+                        ficaram emocionados.</p>
+                    <div class="depoimento-author">
+                        <div class="author-info">
+                            <h4>Marina & Carlos Henrique</h4>
+                            <span>Casamento - Igreja do Rosário, São Paulo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="quote-icon">"</div>
+                    <p class="depoimento-text">Profissionais excepcionais! Contratamos para nosso evento corporativo e
+                        superaram todas as expectativas. A elegância e sofisticação que trouxeram ao ambiente foram
+                        perfeitas.</p>
+                    <div class="depoimento-author">
+                        <div class="author-info">
+                            <h4>Roberto Silva</h4>
+                            <span>Diretor Executivo - Evento Corporativo, Santos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="quote-icon">"</div>
+                    <p class="depoimento-text">O pedido de casamento ficou perfeito! A Daniela no violino tocou
+                        exatamente como eu sonhava. Foi um momento inesquecível, cheio de emoção e beleza musical.</p>
+                    <div class="depoimento-author">
+                        <div class="author-info">
+                            <h4>Amanda Oliveira</h4>
+                            <span>Pedido de Casamento - Jardim Botânico, Campinas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="quote-icon">"</div>
+                    <p class="depoimento-text">Para o aniversário de 60 anos da minha mãe, criaram um repertório
+                        personalizado que emocionou toda a família. Pontualidade, qualidade e carinho em cada nota
+                        tocada.</p>
+                    <div class="depoimento-author">
+                        <div class="author-info">
+                            <h4>Lucas Ferreira</h4>
+                            <span>Aniversário Especial - Clube Hípico, Guarulhos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Vamos criar a trilha sonora perfeita para seu evento especial</p>
+            </div>
+
+            <div class="contato-content">
+                <div class="contato-form">
+                    <form id="form-contato">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone/WhatsApp</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="evento">Tipo de Evento</label>
+                                <select id="evento" name="evento" required>
+                                    <option value="">Selecione o tipo de evento</option>
+                                    <option value="casamento">Casamento</option>
+                                    <option value="pedido">Pedido de Casamento</option>
+                                    <option value="aniversario">Aniversário</option>
+                                    <option value="corporativo">Evento Corporativo</option>
+                                    <option value="religioso">Evento Religioso</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="data">Data do Evento</label>
+                                <input type="date" id="data" name="data">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5"
+                                placeholder="Conte-nos mais sobre seu evento, local, horário e preferências musicais..."></textarea>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para música clássica no meu evento especial."
+                                class="btn btn-whatsapp" target="_blank">
+                                WhatsApp Direto
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contato-info">
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/5511999999999">(11) 99999-9999</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:contato@ligature.com.br">contato@ligature.com.br</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Atendimento</h3>
+                        <p>Grande São Paulo e Interior<br><small>Consulte outras regiões</small></p>
+                    </div>
+
+                    <div class="social-media">
+                        <h3>Nos Acompanhe</h3>
+                        <div class="social-links">
+                            <a href="https://instagram.com/ligature_oficial" target="_blank" class="social-link">
+                                <span class="social-icon">📸</span>
+                                Instagram
+                            </a>
+                            <a href="https://youtube.com/@ligature" target="_blank" class="social-link">
+                                <span class="social-icon">🎥</span>
+                                YouTube
+                            </a>
+                            <a href="https://tiktok.com/@ligature_oficial" target="_blank" class="social-link">
+                                <span class="social-icon">🎵</span>
+                                TikTok
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="./public/img/ligature.png" alt="">
+                    </div>
+                    <p>Edson & Daniela - Música clássica para momentos inesquecíveis</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#repertorio">Repertório</a>
+                    <a href="#galeria">Galeria</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Ligature - Edson & Daniela. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
