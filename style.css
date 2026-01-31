@@ -323,16 +323,15 @@ section {
 }
 
 .hero-content {
-    max-width: 640px;
     width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
     padding: 0 24px 10vh;
     z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     box-sizing: border-box;
 }
 
@@ -368,13 +367,7 @@ section {
 .hero-text h2 .hero-title-line1,
 .hero-text h2 .hero-title-line2 {
     display: block;
-}
-
-@media (min-width: 769px) {
-    .hero-text h2 .hero-title-line1,
-    .hero-text h2 .hero-title-line2 {
-        white-space: nowrap;
-    }
+    white-space: nowrap;
 }
 
 .hero-text p {
@@ -1853,18 +1846,24 @@ section {
     }
     
     .hero-content {
-        padding-bottom: 10vh;
-        padding-top: 0;
         max-width: 90vw;
+        margin: 0 auto;
+        padding: 0 24px 10vh;
+        text-align: center;
+        align-items: center;
     }
 
     .hero-text {
-        max-width: 320px;
+        max-width: 360px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+        text-align: center !important;
+        align-items: center;
     }
 
     .hero-text h2 {
+        text-align: center !important;
         font-family: 'Libre Baskerville', Georgia, serif;
         font-style: italic;
         font-size: 2rem;
@@ -1873,6 +1872,11 @@ section {
         max-width: 100%;
         min-width: 0;
         letter-spacing: 0.01em;
+    }
+
+    .hero-text h2 .hero-title-line1,
+    .hero-text h2 .hero-title-line2 {
+        white-space: nowrap;
     }
 
     .hero-text p {
@@ -1960,21 +1964,35 @@ section {
     }
     
     .hero-content {
-        padding-bottom: 8vh;
         max-width: 92vw;
+        margin: 0 auto;
+        padding: 0 16px 8vh;
+        text-align: center;
+        align-items: center;
     }
 
     .hero-text {
-        max-width: 300px;
+        max-width: 340px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center !important;
+        align-items: center;
     }
 
     .hero-text h2 {
+        text-align: center !important;
         font-family: 'Libre Baskerville', Georgia, serif;
         font-style: italic;
-        font-size: 1.75rem;
+        font-size: 1.7rem;
         line-height: 1.2;
         margin-bottom: 0.5rem;
         min-width: 0;
+    }
+
+    .hero-text h2 .hero-title-line1,
+    .hero-text h2 .hero-title-line2 {
+        white-space: nowrap;
     }
 
     .hero-text p {
