@@ -323,9 +323,13 @@ section {
 }
 
 .hero-content {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
     width: 100%;
     max-width: 640px;
-    margin: 0 auto;
+    min-width: 0;
     padding: 0 24px 10vh;
     z-index: 1;
     display: flex;
@@ -340,6 +344,7 @@ section {
     text-align: center !important;
     width: 100%;
     max-width: 100%;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1846,16 +1851,20 @@ section {
     }
     
     .hero-content {
+        left: 50%;
+        transform: translateX(-50%);
         max-width: 90vw;
-        margin: 0 auto;
+        width: 90vw;
+        min-width: 0;
         padding: 0 24px 10vh;
         text-align: center;
         align-items: center;
     }
 
     .hero-text {
-        max-width: 360px;
+        max-width: 100%;
         width: 100%;
+        min-width: 0;
         margin-left: auto;
         margin-right: auto;
         text-align: center !important;
@@ -1866,8 +1875,8 @@ section {
         text-align: center !important;
         font-family: 'Libre Baskerville', Georgia, serif;
         font-style: italic;
-        font-size: 2rem;
-        line-height: 1.2;
+        font-size: 1.55rem;
+        line-height: 1.25;
         margin-bottom: 0.6rem;
         max-width: 100%;
         min-width: 0;
@@ -1881,8 +1890,8 @@ section {
 
     .hero-text p {
         font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-        font-size: 0.8rem;
-        letter-spacing: 0.1em;
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
         line-height: 1.5;
         margin-bottom: 1.25rem;
         max-width: 280px;
@@ -1964,16 +1973,20 @@ section {
     }
     
     .hero-content {
+        left: 50%;
+        transform: translateX(-50%);
         max-width: 92vw;
-        margin: 0 auto;
+        width: 92vw;
+        min-width: 0;
         padding: 0 16px 8vh;
         text-align: center;
         align-items: center;
     }
 
     .hero-text {
-        max-width: 340px;
+        max-width: 100%;
         width: 100%;
+        min-width: 0;
         margin-left: auto;
         margin-right: auto;
         text-align: center !important;
@@ -1984,8 +1997,8 @@ section {
         text-align: center !important;
         font-family: 'Libre Baskerville', Georgia, serif;
         font-style: italic;
-        font-size: 1.7rem;
-        line-height: 1.2;
+        font-size: 1.35rem;
+        line-height: 1.25;
         margin-bottom: 0.5rem;
         min-width: 0;
     }
@@ -1997,8 +2010,8 @@ section {
 
     .hero-text p {
         font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-        font-size: 0.75rem;
-        letter-spacing: 0.08em;
+        font-size: 0.7rem;
+        letter-spacing: 0.06em;
         line-height: 1.45;
         margin-bottom: 1rem;
         max-width: 260px;
