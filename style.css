@@ -262,6 +262,7 @@ section {
     text-align: center;
     color: #ffffff;
     overflow: hidden;
+    direction: ltr;
 }
 
 .hero-bg {
@@ -322,39 +323,73 @@ section {
 }
 
 .hero-content {
-    max-width: 720px;
-    padding: 0 24px 14vh;
-    z-index: 1;
+    max-width: 640px;
     width: 100%;
+    padding: 0 24px 10vh;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .hero-text {
     margin-bottom: 0;
+    text-align: center !important;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text h2,
+.hero-text p,
+.hero-text .hero-buttons {
+    align-self: center;
 }
 
 .hero-text h2 {
-    font-family: 'Great Vibes', cursive;
-    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    text-align: center !important;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(2.25rem, 4.5vw, 3rem);
     font-weight: 400;
     letter-spacing: 0.02em;
-    line-height: 1.25;
-    margin-bottom: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 0.85rem;
     color: #ffffff;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
 }
 
+.hero-text h2 .hero-title-line1,
+.hero-text h2 .hero-title-line2 {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .hero-text h2 .hero-title-line1,
+    .hero-text h2 .hero-title-line2 {
+        white-space: nowrap;
+    }
+}
+
 .hero-text p {
     font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 300;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
     color: rgba(255, 255, 255, 0.88);
-    max-width: 420px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .hero-buttons {
@@ -362,6 +397,8 @@ section {
     gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
 }
 
 .scroll-indicator {
@@ -1828,11 +1865,13 @@ section {
     }
 
     .hero-text h2 {
-        font-family: 'Great Vibes', cursive;
+        font-family: 'Libre Baskerville', Georgia, serif;
+        font-style: italic;
         font-size: 2rem;
         line-height: 1.2;
         margin-bottom: 0.6rem;
         max-width: 100%;
+        min-width: 0;
         letter-spacing: 0.01em;
     }
 
@@ -1930,10 +1969,12 @@ section {
     }
 
     .hero-text h2 {
-        font-family: 'Great Vibes', cursive;
+        font-family: 'Libre Baskerville', Georgia, serif;
+        font-style: italic;
         font-size: 1.75rem;
         line-height: 1.2;
         margin-bottom: 0.5rem;
+        min-width: 0;
     }
 
     .hero-text p {
