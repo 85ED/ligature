@@ -572,6 +572,7 @@ section {
 
 .repertorio {
     background: #ffffff;
+    overflow-x: hidden;
 }
 
 .repertorio-slider {
@@ -603,6 +604,34 @@ section {
     width: 280px;
     min-width: 280px;
     flex: 0 0 280px;
+}
+
+@media (max-width: 768px) {
+    .repertorio .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .repertorio-slider-inner {
+        gap: 0.5rem;
+    }
+
+    .repertorio-card {
+        width: min(280px, calc(100vw - 120px));
+        min-width: min(260px, calc(100vw - 120px));
+        flex: 0 0 min(280px, calc(100vw - 120px));
+    }
+
+    .repertorio-btn {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .repertorio-btn svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .repertorio-btn {
@@ -752,6 +781,8 @@ section {
     color: #4a4a4a;
     font-size: 0.9rem;
     transition: color 0.3s ease;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .repertorio-momento {
