@@ -324,9 +324,11 @@ section {
 
 .hero-content {
     position: absolute;
-    left: 50%;
+    left: 0;
+    right: 0;
     bottom: 0;
-    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     max-width: 640px;
     min-width: 0;
@@ -367,12 +369,16 @@ section {
     margin-bottom: 0.85rem;
     color: #ffffff;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    overflow-wrap: break-word;
 }
 
 .hero-text h2 .hero-title-line1,
 .hero-text h2 .hero-title-line2 {
     display: block;
     white-space: nowrap;
+    width: 100%;
+    text-align: center;
 }
 
 .hero-text p {
@@ -1851,24 +1857,26 @@ section {
     }
     
     .hero-content {
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 90vw;
-        width: 90vw;
-        min-width: 0;
-        padding: 0 24px 10vh;
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 20px 10vh !important;
+        transform: none !important;
         text-align: center;
-        align-items: center;
+        box-sizing: border-box;
     }
 
     .hero-text {
-        max-width: 100%;
-        width: 100%;
-        min-width: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center !important;
-        align-items: center;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        text-align: center;
     }
 
     .hero-text h2 {
@@ -1878,14 +1886,18 @@ section {
         font-size: 1.55rem;
         line-height: 1.25;
         margin-bottom: 0.6rem;
-        max-width: 100%;
-        min-width: 0;
-        letter-spacing: 0.01em;
+        width: 100%;
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
     }
 
     .hero-text h2 .hero-title-line1,
     .hero-text h2 .hero-title-line2 {
-        white-space: nowrap;
+        white-space: normal !important;
+        display: block;
+        width: 100%;
+        text-align: center !important;
     }
 
     .hero-text p {
@@ -1895,14 +1907,16 @@ section {
         line-height: 1.5;
         margin-bottom: 1.25rem;
         max-width: 280px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: center;
         gap: 0.75rem;
+        width: 100%;
     }
     
     .sobre-bloco1 {
@@ -1973,39 +1987,30 @@ section {
     }
     
     .hero-content {
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 92vw;
-        width: 92vw;
-        min-width: 0;
-        padding: 0 16px 8vh;
-        text-align: center;
-        align-items: center;
-    }
-
-    .hero-text {
-        max-width: 100%;
-        width: 100%;
-        min-width: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center !important;
-        align-items: center;
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 16px 8vh !important;
+        transform: none !important;
     }
 
     .hero-text h2 {
-        text-align: center !important;
-        font-family: 'Libre Baskerville', Georgia, serif;
-        font-style: italic;
         font-size: 1.35rem;
         line-height: 1.25;
         margin-bottom: 0.5rem;
-        min-width: 0;
+        width: 100%;
+        white-space: normal !important;
     }
 
     .hero-text h2 .hero-title-line1,
     .hero-text h2 .hero-title-line2 {
-        white-space: nowrap;
+        white-space: normal !important;
+        display: block;
+        width: 100%;
+        text-align: center !important;
     }
 
     .hero-text p {
@@ -2015,6 +2020,8 @@ section {
         line-height: 1.45;
         margin-bottom: 1rem;
         max-width: 260px;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
     
     .btn {
@@ -2072,5 +2079,104 @@ section {
     
     html {
         scroll-behavior: auto;
+    }
+}
+
+/* ================================================ */
+/* SOLUÇÃO DEFINITIVA PARA CENTRALIZAÇÃO NO DESKTOP */
+/* ================================================ */
+
+@media (min-width: 769px) {
+    /* RESET do que não funcionou */
+    .hero-content {
+        left: 0 !important;
+        right: 0 !important;
+        transform: none !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    /* Container do texto - garante centralização perfeita */
+    .hero-text {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Título centralizado com técnica infalível */
+    .hero-text h2 {
+        text-align: center !important;
+        width: auto !important;
+        max-width: 100% !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 0 !important;
+    }
+    
+    /* LINHA 1 - Centralização perfeita */
+    .hero-text h2 .hero-title-line1 {
+        display: block !important;
+        white-space: nowrap !important;
+        text-align: center !important;
+        width: auto !important;
+        margin: 0 auto !important;
+        position: static !important;
+        transform: none !important;
+        left: auto !important;
+        right: auto !important;
+    }
+    
+    /* LINHA 2 - Centralização perfeita */
+    .hero-text h2 .hero-title-line2 {
+        display: block !important;
+        white-space: nowrap !important;
+        text-align: center !important;
+        width: auto !important;
+        margin: 0 auto !important;
+        position: static !important;
+        transform: none !important;
+        left: auto !important;
+        right: auto !important;
+    }
+}
+
+/* ================================ */
+/* CORREÇÃO FINAL PARA O TEXTO */
+/* ================================ */
+
+@media (min-width: 769px) {
+    /* 1. GARANTIR que o texto ocupe largura total */
+    .hero-text {
+        width: 100% !important;
+        display: block !important;
+        text-align: center !important;
+    }
+    
+    /* 2. TRUQUE INFALÍVEL para centralizar o h2 */
+    .hero-text h2 {
+        display: inline-block !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        width: auto !important;
+        max-width: 100% !important;
+    }
+    
+    /* 3. FORÇAR centralização das linhas */
+    .hero-text h2 .hero-title-line1,
+    .hero-text h2 .hero-title-line2 {
+        text-align: center !important;
+        display: block !important;
+        white-space: nowrap !important;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: max-content !important;
     }
 }
